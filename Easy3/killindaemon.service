@@ -1,0 +1,9 @@
+[Unit]
+Description=Killing daemon
+
+[Service]
+ExecStart=/home/tharun/Desktop/ONSITES/Easy3/mem.sh
+Restart=om-failure 
+
+[Install]
+WantedBy=multi-user.target

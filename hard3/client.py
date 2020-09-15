@@ -2,8 +2,7 @@
 import socket
 import threading
 so=socket.socket()
-print(so)
-so.connect(('0.0.0.0',9045))
+so.connect(('127.0.0.1',9045))
 name=input("Enter name ")
 def sent():
     while True:

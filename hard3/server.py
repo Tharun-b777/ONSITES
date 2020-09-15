@@ -3,7 +3,7 @@ import socket
 import threading 
 s=socket.socket() 
 
-s.bind(('0.0.0.0',9045))
+s.bind(('127.0.0.1',9045))
 
 s.listen()
 clients=[]
