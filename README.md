@@ -24,7 +24,7 @@ ports.conf to listen to given port place it at /etc/apache2/
 
 consists of commit file to commit and run file to run it as background process
 
-#Easy2
+# Easy2
 
 consists of a file to hide and an image to hide it in 
 
