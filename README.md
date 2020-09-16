@@ -4,6 +4,8 @@
 
 consists of html file and a python file 
 
+On executing python file html file is displayed on http://localhost:8095 
+
 # hard3
 
 consists of server and client python files
