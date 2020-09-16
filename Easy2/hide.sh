@@ -1,7 +1,8 @@
 #!/bin/bash
 read -p "Enter text" txt  
 echo "$txt" > tmp
-steghide embed -ef tmp -cf *.jpg
+read -p "Enter your image extension " ext
+steghide embed -ef tmp -cf *.${ext}
 rm tmp 
 read -p "Do you want to read text(y/n)??" reply 
 case $reply in 

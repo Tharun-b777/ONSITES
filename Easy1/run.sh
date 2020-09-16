@@ -1,2 +1,2 @@
 #!/bin/bash 
-nohup ./commit.sh&>/dev/null &
+./commit.sh&>/dev/null &
