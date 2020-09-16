@@ -12,8 +12,9 @@ consists of server and client python files
 
 # hard2
 
-hard2.html can be hosted using php -S localhost:8081 index.html 
+hard2.html can be hosted using php -S localhost:8081 index.html (port exposed by proxy 8080)
 or can be Virtualy hosted using files present in Virtualhost directory 
+
 
 place test folder in /var/www
 
