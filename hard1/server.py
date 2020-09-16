@@ -8,10 +8,10 @@ sock.listen()
 while True:
     conn, addr = sock.accept()
     req = conn.recv(1024).decode('utf-8')
-    conn.sendall(str.encode("HTTP/1.0 200 OK\n",'utf-8'))
-    conn.sendall(str.encode('Content-Type: text/html\n\n', 'utf-8'))
+    conn.send(str.encode("HTTP/1.0 200 OK\n",'utf-8'))
+    conn.send(str.encode('Content-Type: text/html\n\n', 'utf-8'))
     with open('index.html', 'r') as f:
         for l in f.readlines():
             print('Sent ', repr(l))
-            conn.sendall(str.encode(l, 'utf-8'))
+            conn.send(str.encode(l, 'utf-8'))
     conn.close()
