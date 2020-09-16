@@ -11,6 +11,6 @@ cat tmp
 rm tmp ;;
 
 *)
-exit;;
+exit 0;;
 
 esac
